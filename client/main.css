@@ -1,0 +1,26 @@
+html {
+  padding: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+.you
+{
+  padding: 8px;
+    background-color: green;
+      border-radius: 6px;
+      border-bottom-left-radius: 0px;
+      overflow: auto;
+}
+
+.them
+{
+  padding: 8px;
+  background-color: blue;
+  border-radius: 6px;
+    border-bottom-right-radius: 0px;
+    overflow: auto;
+}
+
+.login-buttons-dropdown-align-right {
+  float: right;
+}/* CSS declarations go here */
