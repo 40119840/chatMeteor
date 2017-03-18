@@ -25,3 +25,4 @@ accounts-password
 raix:handlebar-helpers
 # kadira:flow-router
 iron:router
+session

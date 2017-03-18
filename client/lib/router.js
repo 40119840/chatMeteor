@@ -1,6 +1,6 @@
 Router.route('chat/:_id', function () {
   this.render('chat', {
-    data: function () { console.log(this.params._id); return  this.params._id }
+    data: function () { return  this.params._id }
   });
 });
 

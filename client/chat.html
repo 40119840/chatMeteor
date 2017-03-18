@@ -1,6 +1,17 @@
 <template name="chat">
+chat <br>
+{{> loginButtons}}
 
-ths is the chat page
+{{#if currentUser}}
+{{#each messages}}
+  {{#if $eq from userId}}
+  <div class='you'><strong >{{name}}:</strong> {{message}} </div><br>
+  {{else}}
+  <div class='them'><strong >{{name}}:</strong> {{message}} </div><br>
+  {{/if}}
+{{/each}}
+{{/if}}
 
+<p>Message: <input type="text" id="message"></p>
 
 </template>
