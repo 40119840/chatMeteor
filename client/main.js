@@ -1,3 +1,19 @@
+
+// Router.route('/', function () {
+//   this.render('login', {
+//     data: function () { return Items.findOne({_id: this.params._id}); }
+//   });
+// });
+//
+// Router.route('/test/:_id', function () {
+//   this.render('userlist', {
+//     data: function () {
+//       console.log("zz")
+//       return userlist.findOne({_id: this.params._id});
+//     }
+//   });
+// });
+
 if (Meteor.isClient) {
   Template.messages.helpers({
     messages: function() {

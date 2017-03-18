@@ -6,12 +6,12 @@
 <body>
   <h1>Chatapp</h1>
 
-  current user:
 
-  {{> loginButtons}}
+<!--
+  {{> login}}
   {{> input }}
   {{> messages }}
-
+ -->
 
 </body>
 
@@ -25,6 +25,11 @@
     {{/if}}
   {{/each}}
   {{/if}}
+</template>
+
+
+<template name="login">
+      {{> loginButtons}}
 </template>
 
 <template name="input">
