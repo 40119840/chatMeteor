@@ -5,14 +5,12 @@ if (Meteor.isClient) {
     return Meteor.users.find();
   },
   userEmail: function(){
-    return this.emails[0].address;
+    return this.emails;
   }
 });
 
 Template.userlist.events({
-    'click .user': function(){
-      var playerId = this._id;
-      Router.go('/chat/'+playerId+'');
-    }
+
+
 });
 }

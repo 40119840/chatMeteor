@@ -1,9 +1,9 @@
 <template name="userlist">
 
 Registered Users
+{{> loginButtons}}
 {{#each user}}
-{{userEmail}}
-<li class="user"> <p value:{{_id}}> user </li>
+<li class="user"> <a href="/chat/{{_id}}"> {{emails}} </a>  </li>
 {{/each}}
 
 </template>
