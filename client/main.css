@@ -10,23 +10,25 @@ html {
       border-radius: 6px;
       border-bottom-left-radius: 0px;
       overflow: auto;
+        margin-right: 15px;
 }
 
 .user
 {
 
-  
+
 }
 
 .them
 {
   padding: 8px;
-  background-color: blue;
+  background-color: #009afd;
   border-radius: 6px;
     border-bottom-right-radius: 0px;
     overflow: auto;
+    margin-left: 15px;
 }
 
-.login-buttons-dropdown-align-right {
-  float: right;
+li#login-dropdown-list.dropdown {
+  list-style-type: none;
 }/* CSS declarations go here */

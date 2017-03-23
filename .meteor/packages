@@ -27,7 +27,7 @@ iron:router
 session
 bootstrap
 #accounts-google
-accounts-facebook
+
 stylus
 accounts-password
 ian:accounts-ui-bootstrap-3

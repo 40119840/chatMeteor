@@ -1,9 +1,15 @@
 <template name="userlist">
 
-Registered Users
-{{> loginButtons}}
+
+
+  <h3>Registered Users:</h3>
+
+<div class="list-group">
 {{#each user}}
-<li class="user"> <a href="/chat/{{_id}}"> {{emails}} </a>  </li>
+  <a href="/chat/{{_id}}" class="list-group-item">{{username}}</a>
 {{/each}}
+
+</div>
+
 
 </template>

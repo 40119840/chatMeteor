@@ -26,7 +26,7 @@ if (Meteor.isClient) {
                     }]
                 }
                 , {
-                    sort: {time: -1}
+                    sort: {time: +1}
                 });
 
             console.log(p1);
@@ -36,6 +36,12 @@ if (Meteor.isClient) {
 
     return query;
   },
+
+  getusername: function() {
+  p2 = Session.get('userid')
+  var username = Meteor.users.findOne(p2).username;
+  return username;
+},
 
 
 
@@ -49,9 +55,10 @@ Template.chat.events = {
   'keydown input#message' : function (event) {
   if (event.which == 13) {
     if (Meteor.user())
-    var name = Meteor.user().emails[0].address;
+    var name = Meteor.user().username;
       else
     var name = 'Unkown User';
+    console.log(name);
     var receiver =  Session.get('userid');
 
 
